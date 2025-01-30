@@ -1,0 +1,15 @@
+<h1>Inventory Test Results</h1>
+<table border="1">
+    <tr>
+        <th>Product</th>
+        <th>Needs Restocking</th>
+        <th>Predicted Restocking Date</th>
+    </tr>
+    {% for item in inventory_data %}
+    <tr>
+        <td>{{ item.product }}</td>
+        <td>{{ item.needs_restocking }}</td>
+        <td>{{ item.predicted_date }}</td>
+    </tr>
+    {% endfor %}
+</table>
